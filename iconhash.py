@@ -1,35 +1,15 @@
-import os
 import time
 import hashlib
-import warnings
-from wsgiref import headers
-from openpyxl.utils.units import pixels_to_EMU
-from PIL import Image as PILImage
-import openpyxl
-from openpyxl import load_workbook
-import requests
 import base64
 import mmh3
-from openpyxl import Workbook
-from openpyxl.drawing.image import Image
-from openpyxl.utils import get_column_letter
-from openpyxl.styles import Alignment, Font
-import openpyxl
-from openpyxl.drawing.image import Image
+from openpyxl.styles import Font
 import os
-from PIL import Image as PILImage
 import favicon
 import requests
 from PIL import Image
-from io import BytesIO
 from openpyxl import load_workbook
 from openpyxl import Workbook
 from openpyxl.drawing.image import Image
-from openpyxl.utils import get_column_letter
-from openpyxl import Workbook
-from openpyxl.drawing.image import Image
-from openpyxl.drawing.spreadsheet_drawing import TwoCellAnchor, AnchorMarker
-from openpyxl.utils.units import cm_to_EMU
 
 UA = "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spider.html)"
 
@@ -159,10 +139,5 @@ def read_file(file_path):
         print("文件打开失败")
 
 
-# # if __name__ == "__main__":
-# icon = get_icon("https://cloud.tencent.com/")
-# a = save_icon(icon[0])
-# save_xlsx("https://cloud.tencent.com/", a, icon[0].format, icon[0].url, xlsx_filename)
-# save_xlsx("https://baidu.com/", a, icon[0].format, icon[0].url, xlsx_filename)
 for i in read_file("t.txt"):
     input_url(i)
