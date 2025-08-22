@@ -16,7 +16,7 @@ UA = "Mozilla/5.0 (compatible; Baiduspider/2.0; +http://www.baidu.com/search/spi
 # 创建xlsx文件
 wb = Workbook()
 sheet = wb.active
-header_data = ["url", "icon", "hunter", "fofa", "type", "finger", "ico_url"]
+header_data = ["url", "icon", "hunter", "fofa", "type", "ico_url"]
 
 sheet.column_dimensions['A'].width = 30
 sheet.column_dimensions['B'].width = 10
